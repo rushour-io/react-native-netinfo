@@ -42,8 +42,7 @@ public class BroadcastReceiverConnectivityReceiver extends ConnectivityReceiver 
         NetInfoUtils.compatRegisterReceiver(
                 getReactContext(),
                 mConnectivityBroadcastReceiver,
-                filter,
-                false
+                filter
         );
         mConnectivityBroadcastReceiver.setRegistered(true);
         updateAndSendConnectionType();

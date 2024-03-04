@@ -90,7 +90,7 @@ public class AmazonFireDeviceConnectivityPoller {
         IntentFilter filter = new IntentFilter();
         filter.addAction(ACTION_INTERNET_DOWN);
         filter.addAction(ACTION_INTERNET_UP);
-        NetInfoUtils.compatRegisterReceiver(context, receiver, filter, false);
+        NetInfoUtils.compatRegisterReceiver(context, receiver, filter);
 
         receiver.registered = true;
     }
